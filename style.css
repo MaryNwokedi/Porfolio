@@ -393,6 +393,10 @@ li {
   transform: rotate(-45deg);
 }
 
+.icon-container:hover {
+  transform: rotate(0deg);
+}
+
 /*..Portfolio..*/
 .portfolio-item {
   display: flex;
@@ -410,6 +414,14 @@ li {
 }
 .portfolio-img {
   flex: 1;
+}
+
+.portfolio-img img {
+  transition: 0.2s ease;
+}
+
+.portfolio-img img:hover {
+  transform: scale(1.05);
 }
 
 .portfolio-description {
@@ -515,6 +527,10 @@ li {
 }
 
 /*contact form */
+
+section.contact {
+  padding: 6rem 0 2rem 0;
+}
 .contact {
   background: linear-gradient(45deg, var(--color4), var(--color2));
 }
@@ -553,14 +569,14 @@ input[type="submit"]:hover {
   color: var(--color2);
   background-color: #eee;
 }
-
-/*footer*/
+hr {
+  margin-top: 3rem;
+}
 .copyright {
   width: 100%;
   text-align: center;
-  background: var(--color2);
   color: #fff;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   position: relative;
 }
 
